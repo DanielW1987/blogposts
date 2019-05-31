@@ -2,33 +2,32 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.5.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+    <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>jdbctemplate</artifactId>
+    <artifactId>resttemplate</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>JdbcTemplate Demo</name>
-    <description>Demo project for using JdbcTemplate</description>
+    <name>resttemplate</name>
+    <description>Example project for blog post about using RestTemplate for consuming a REST web service.</description>
 
     <properties>
         <java.version>11</java.version>
     </properties>
 
     <dependencies>
-        <!-- For JdbcTemplate demo project -->
+        <!-- For RestTemplate demo project -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <scope>runtime</scope>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
         </dependency>
 
         <!-- For unit test -->
