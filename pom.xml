@@ -17,6 +17,7 @@
     <modules>
         <module>jdbctemplate</module>
         <module>resttemplate</module>
+        <module>springbootehcache</module>
     </modules>
 
 </project>
